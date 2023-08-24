@@ -1,3 +1,6 @@
+# frozen_string_literal: true
+
+# This is a top-level documentation comment for the class.
 class CreateLikes < ActiveRecord::Migration[7.0]
   def change
     create_table :likes do |t|
