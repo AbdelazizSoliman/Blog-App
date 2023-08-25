@@ -14,7 +14,7 @@ class Post < ApplicationRecord
   # Callbacks
   after_save :update_user_posts_counter
 
- # Methods
+  # Methods
   def update_user_posts_counter
     author.update(posts_counter: author.posts.count)
   end

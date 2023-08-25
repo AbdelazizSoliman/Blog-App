@@ -7,7 +7,7 @@ class Like < ApplicationRecord
   # Callbacks
   after_save :update_post_likes_counter
 
- # Methods
+  # Methods
   def update_post_likes_counter
     post.update(likes_counter: post.likes.count)
   end
