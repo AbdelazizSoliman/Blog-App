@@ -76,6 +76,8 @@ a {
 #pagination {
   margin: 1rem auto;
   padding: 1rem;
+  display: flex;
+  justify-content: center;
 }
 
 #back-btn {
