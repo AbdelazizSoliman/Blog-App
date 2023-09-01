@@ -5,7 +5,7 @@ class UsersController < ApplicationController
     @users = User.all
   end
 
-  def show; 
+  def show
     @three_recent_posts = @user.three_most_recent_posts
   end
 
