@@ -1,6 +1,8 @@
 require 'rails_helper'
 
 RSpec.describe 'PostsController', type: :request do
+    include Rails.application.routes.url_helpers
+
   let(:user) { User.create(name: 'Test User') }
   let(:post) { Post.create(author: user, title: 'Test Post') }
 

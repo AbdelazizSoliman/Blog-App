@@ -1,6 +1,8 @@
 require 'rails_helper'
 
 RSpec.describe 'UsersController', type: :request do
+  include Rails.application.routes.url_helpers
+  
   let(:user) { User.create(name: 'Test User') }
 
   describe 'GET /index' do
