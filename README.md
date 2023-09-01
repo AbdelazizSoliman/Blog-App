@@ -109,7 +109,7 @@ To run tests, run the following command:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- validations and model specs.
+- Adding the Views associated with the Models and Controllers I've already created for my Blog App.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
