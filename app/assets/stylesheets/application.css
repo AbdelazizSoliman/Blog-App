@@ -23,3 +23,34 @@
     color: gray;
   }
   
+  .user-box {
+    display: flex;
+    margin-bottom: 1rem;
+  }
+  
+  .user-photo {
+    width: 5rem;
+    background-color: darkgray;
+  }
+  
+  .user-details {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    background-color: #f0f0f0;
+    border: 1px solid #575656;
+    text-align: center;
+    padding: 1rem;
+    margin-left: 1rem;
+  }
+  
+  .user-name {
+    font-size: 30px;
+    font-weight: bold;
+  }
+  
+  .posts-count {
+    font-size: 20px;
+  }
+  
+  
