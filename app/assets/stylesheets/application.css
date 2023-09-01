@@ -13,79 +13,79 @@
  *= require_tree .
  *= require_self
  */
- ul {
-    padding: 1rem;
-    margin: 1rem;
-  }
-  
-  a {
-    text-decoration: none;
-    color: gray;
-  }
-  
-  .user-box {
-    display: flex;
-    margin-bottom: 1rem;
-  }
-  
-  .user-photo {
-    width: 5rem;
-    background-color: darkgray;
-  }
-  
-  .user-details {
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-    background-color: #f0f0f0;
-    border: 1px solid #575656;
-    text-align: center;
-    padding: 1rem;
-    margin-left: 1rem;
-  }
-  
-  .user-name {
-    font-size: 30px;
-    font-weight: bold;
-  }
-  
-  .posts-count {
-    font-size: 20px;
-  }
-  
-  .user-post {
-    border: black solid 1px;
-    padding: 0.5rem 0.5rem;
-    margin-bottom: 0.5rem;
-  }
-  
-  .post {
-    display: flex;
-    flex-direction: column;
-  }
+ul {
+  padding: 1rem;
+  margin: 1rem;
+}
 
-  .post-interactions {
-    display: flex;
-    gap: 3px;
-    justify-content: flex-end;
-  }
-  
-  .pagination {
-    display: flex;
-    justify-content: center;
-  }
-  
-  #pagination {
-    margin: 1rem auto;
-    padding: 1rem;
-  }
-  
-  #back-btn {
-    margin-bottom: 0.5rem;
-  }
-  
-  .bio {
-    border: black solid 1px;
-    padding: 0.5rem 0.5rem;
-    margin-bottom: 0.5rem;
-  }
+a {
+  text-decoration: none;
+  color: gray;
+}
+
+.user-box {
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.user-photo {
+  width: 5rem;
+  background-color: darkgray;
+}
+
+.user-details {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  background-color: #f0f0f0;
+  border: 1px solid #575656;
+  text-align: center;
+  padding: 1rem;
+  margin-left: 1rem;
+}
+
+.user-name {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.posts-count {
+  font-size: 20px;
+}
+
+.user-post {
+  border: black solid 1px;
+  padding: 0.5rem 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.post {
+  display: flex;
+  flex-direction: column;
+}
+
+.post-interactions {
+  display: flex;
+  gap: 3px;
+  justify-content: flex-end;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+}
+
+#pagination {
+  margin: 1rem auto;
+  padding: 1rem;
+}
+
+#back-btn {
+  margin-bottom: 0.5rem;
+}
+
+.bio {
+  border: black solid 1px;
+  padding: 0.5rem 0.5rem;
+  margin-bottom: 0.5rem;
+}
