@@ -8,7 +8,20 @@ class PostsController < ApplicationController
 
   def show; end
 
-  def new; end
+  def new
+    @user = current_user
+    @post = @user.posts.new
+  end
+
+  def create
+    @post = current_user.posts.new(post_params)
+    if @post.save
+      flash[:notice] = 'Post created successfully.'
+      redirect_to user_path(current_user)
+    else
+      render 'new'
+    end
+  end
 
   def find_user
     @user = User.find(params[:user_id])
