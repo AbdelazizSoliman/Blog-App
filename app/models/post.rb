@@ -2,7 +2,7 @@
 class Post < ApplicationRecord
   # Associations
   belongs_to :author, class_name: 'User'
-  has_many :comments, foreign_key: :author_id
+  has_many :comments
   has_many :likes
 
   # Attributes
