@@ -1,4 +1,6 @@
 class CommentsController < ApplicationController
+    before_action :find_user
+    before_action :find_post
 
     def new
         @comment = @post.comments.new
@@ -23,5 +25,9 @@ class CommentsController < ApplicationController
 
     def find_post
         @post = Post.find(params[:post_id])
+    end
+
+    def comment_params
+        params.require(:comment).permit(:text)
     end
 end
