@@ -23,6 +23,19 @@ class PostsController < ApplicationController
     end
   end
 
+  def like
+    @like = @post.likes.new()
+    @like.author = current_user
+    @like.save
+    redirect_to user_post_path(@user, @post)
+  end
+  
+  def unlike
+    @like = @post.likes.find_by(post: @post) # Find the like
+    @like.destroy if @like # Destroy the like if found
+    redirect_to user_post_path(@user, @post)
+  end
+
   def find_user
     @user = User.find(params[:user_id])
   end
