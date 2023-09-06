@@ -33,6 +33,6 @@ RSpec.feature 'User Index', type: :feature do
 
     click_link 'Salim'
 
-    expect(page).to have_current_path(user_posts_path(user))
+    expect(page).to have_current_path(user_path(user))
   end
 end
