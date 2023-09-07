@@ -7,8 +7,6 @@ class PostsController < ApplicationController
       .includes(:comments)
       .where(author: params[:user_id])
       .order(created_at: :asc)
-
-    @author = @posts.first.author
   end
 
   def show
