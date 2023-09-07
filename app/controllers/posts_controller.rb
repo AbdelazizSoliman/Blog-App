@@ -2,9 +2,10 @@ class PostsController < ApplicationController
   before_action :find_user, only: %i[index show]
   before_action :find_post, only: [:show]
 
+  to be 
   def index
-    @posts = @user.posts
-  end
+     @posts = Post.includes(:author)
+   end
 
   def show; end
 
