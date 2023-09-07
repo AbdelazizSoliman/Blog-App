@@ -2,12 +2,20 @@ class PostsController < ApplicationController
   before_action :find_user, only: %i[index show]
   before_action :find_post, only: [:show]
 
-  to be 
   def index
-     @posts = Post.includes(:author)
-   end
+    @posts = Post.includes(:author)
+      .includes(:comments)
+      .where(author: params[:user_id])
+      .order(created_at: :asc)
 
-  def show; end
+    @author = @posts.first.author
+  end
+
+  def show
+    @post = Post.find(params[:id])
+    @current_user = User.first
+    @like = Like.new
+  end
 
   def new
     @user = current_user

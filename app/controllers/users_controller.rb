@@ -2,11 +2,13 @@ class UsersController < ApplicationController
   before_action :find_user, only: [:show]
 
   def index
-    @users = User.includes(:posts).all
+    @users = User.all.includes(:posts).order(id: :asc)
   end
 
   def show
+    @user = User.find(params[:id])
     @three_recent_posts = @user.three_most_recent_posts
+    @posts = @user.posts.includes(:author)
   end
 
   def new; end
