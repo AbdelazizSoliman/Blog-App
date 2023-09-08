@@ -101,7 +101,13 @@ To run tests, run the following command:
 
 - GitHub: [@abdelazizsoliman](https://github.com/abdelazizsoliman)
 - Twitter: [@Abdelaz21958317](https://twitter.com/Abdelaz21958317)
-- LinkedIn: [Abdelaziz Soliman](https://www.linkedin.com/in/abdelazizsoliman)
+- LinkedIn: [Abdelaziz Soliman](https://www.linkedin.com/
+in/abdelazizsoliman)
+
+👤 **Alex Waweru**
+- GitHub: [@githubhandle](https://github.com/AleWaweru/)
+- Twitter: [@twitterhandle](https://twitter.com/ngashalex)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/alex-ng-ang-a-waweru-2b2701180/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
