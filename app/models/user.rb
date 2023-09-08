@@ -1,5 +1,9 @@
 # This is a top-level documentation comment for the class.
 class User < ApplicationRecord
+  # Include default devise modules. Others available are:
+  # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
+  devise :database_authenticatable, :registerable,
+         :recoverable, :rememberable, :validatable
   # Associations
   has_many :posts, foreign_key: :author_id
   has_many :comments
