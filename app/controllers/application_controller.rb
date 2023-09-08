@@ -1,6 +1,5 @@
 # This is a top-level documentation comment for the class.
 class ApplicationController < ActionController::Base
-
   before_action :authenticate_user!, :configure_permitted_parameters, if: :devise_controller?
 
   protected
