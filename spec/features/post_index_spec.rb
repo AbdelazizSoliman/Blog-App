@@ -18,7 +18,7 @@ RSpec.feature 'Post Index', type: :feature do
     expect(page).to have_content('Abdelaziz')
   end
 
-  scenario "see the number of posts by the user" do
+  scenario 'see the number of posts by the user' do
     visit user_posts_path(user)
     expect(page).to have_content('1 post')
   end
@@ -43,7 +43,7 @@ RSpec.feature 'Post Index', type: :feature do
     expect(page).to have_content('first text')
   end
 
-  scenario "see the first comment on the post" do
+  scenario 'see the first comment on the post' do
     visit user_posts_path(user)
     expect(page).to have_content('first comment')
   end
