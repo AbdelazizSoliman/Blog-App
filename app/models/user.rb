@@ -2,8 +2,16 @@
 class User < ApplicationRecord
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
-  devise :database_authenticatable, :registerable,
-         :recoverable, :rememberable, :validatable
+
+  devise :database_authenticatable, # Use database authentication
+         :stretches => 13, # Set the cost of the hashing algorithm
+         :pepper => 'your_custom_pepper', # Set a custom pepper
+         :encryptor => :bcrypt, # Use the bcrypt encryptor (default)
+         :confirm_within => 2.days, # Confirmable expiration time
+         :remember_for => 2.weeks, # Rememberable expiration time
+         :timeout_in => 30.minutes, # Session timeout
+         :unlock_in => 1.hour # Account unlock time after too many failed attempts
+         
   # Associations
   has_many :posts, foreign_key: :author_id
   has_many :comments
