@@ -3,7 +3,7 @@ class User < ApplicationRecord
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
 
-  devise :database_authenticatable, :registerable, :recoverable, :rememberable, stretches: 13
+  devise :database_authenticatable,:confirmable, :registerable, :recoverable, :rememberable, stretches: 13
 
   # Associations
   has_many :posts, foreign_key: :author_id
@@ -15,6 +15,7 @@ class User < ApplicationRecord
   attribute :bio, :text
   attribute :posts_counter, :integer, default: 0
   attribute :photo, :string
+  
 
   # Validations
   validates :name, presence: true
