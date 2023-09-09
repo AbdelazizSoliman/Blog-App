@@ -5,20 +5,28 @@
  * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
  * vendor/assets/stylesheets directory can be referenced here using a relative path.
  *
- * You're free to add application-wide styles to this file, and they'll appear at the bottom of the
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
  * compiled file so the styles you add here take precedence over styles defined in any other CSS
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
  */
 
+body {
+  box-sizing: border-box;
+}
+
 ul {
-  padding: 1rem;
-  margin: 1rem;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
 }
 
 a {
   text-decoration: none;
-  color: gray;
+  color: black;
 }
 
 .user-box {
@@ -27,34 +35,40 @@ a {
 }
 
 .user-photo {
-  width: 5rem;
-  background-color: darkgray;
+  width: 4rem;
+  background-color: gray;
+  border-radius: 5px;
+}
+
+.d-flex {
+  display: flex;
 }
 
 .user-details {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   width: 100%;
   background-color: #f0f0f0;
-  border: 1px solid #575656;
+  border: 1px solid #ccc;
+  border-radius: 5px;
   text-align: center;
-  padding: 1rem;
-  margin-left: 1rem;
+  padding: 10px;
+  margin-left: 0.5rem;
 }
 
 .user-name {
-  font-size: 30px;
+  font-size: 24px;
   font-weight: bold;
 }
 
 .posts-count {
-  font-size: 20px;
+  font-size: 14px;
 }
 
 .user-post {
-  border: black solid 1px;
+  border: black solid 2px;
   padding: 0.5rem 0.5rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
 }
 
 .post {
@@ -64,7 +78,8 @@ a {
 
 .post-interactions {
   display: flex;
-  gap: 3px;
+  font-size: small;
+  gap: 5px;
   justify-content: flex-end;
 }
 
@@ -76,16 +91,26 @@ a {
 #pagination {
   margin: 1rem auto;
   padding: 1rem;
-  display: flex;
-  justify-content: center;
 }
 
 #back-btn {
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
 }
 
 .bio {
-  border: black solid 1px;
+  border: black solid 2px;
   padding: 0.5rem 0.5rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.v-hidden {
+  visibility: hidden;
 }
